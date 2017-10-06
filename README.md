@@ -3,34 +3,37 @@
 
 <hr>
 
-# insert-br-tag
+# Quick insert &lt;br&gt; tag = [Shift+Enter]
 
 Very easy to insert `<br>` HTML tag keybind, with Dreamweaver's keybinding style.
 
 * simple keybinding
+  * `shift+enter`
 
-> `shift+enter`
+![](https://raw.githubusercontent.com/1natsu172/vscode-insert-linebreak-tag/master/images/insert-br-demo.gif)
 
 ## Features
 
-Insert `<br>` tag keybind.
+Quick insert `<br>` tag with keybind.  
+Also support multi cursor.
 
-##### like this.
+##### repeated hit keys, like this.
 
 ```
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 ```
+
+## Usage
+
+### Please `shift+enter` !!
+
+Then insert `<br>` tag!!
 
 ## Requirements
 
 ```
 "vscode": "^1.16.0"
 ```
-
-## Usage
-
-##### Please `shift+enter`!!
-##### Then insert `<br>` tag!!
 
 ***
 
