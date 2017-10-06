@@ -36,12 +36,14 @@
                 "title": "Insert <br> Tag"
             }
         ],
-        "keybindings": [{
-            "command": "insertHTMLTag.insertLineBreak",
-            "key": "shift+enter",
-            "mac": "shift+enter",
-            "when": "editorTextFocus"
-        }]
+        "keybindings": [
+            {
+                "command": "insertHTMLTag.insertLineBreak",
+                "key": "shift+enter",
+                "mac": "shift+enter",
+                "when": "editorTextFocus"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",

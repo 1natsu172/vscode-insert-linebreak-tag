@@ -1,4 +1,4 @@
-# insert-br-tag README
+# insert-br-tag
 
 This is the README for your extension "insert-br-tag". 
 
