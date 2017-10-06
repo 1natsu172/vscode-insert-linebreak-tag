@@ -2,7 +2,7 @@
     "name": "insert-br-tag",
     "displayName": "Insert <br> Tag",
     "description": "Insert <br> tag shortcut, like Dreamweaver style",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "publisher": "1natsu",
     "engines": {
         "vscode": "^1.16.0"
