@@ -3,7 +3,7 @@
     "displayName": "Insert <br> Tag",
     "description": "Insert <br> tag shortcut, like Dreamweaver style",
     "version": "0.0.1",
-    "publisher": "1natsu172",
+    "publisher": "1natsu",
     "engines": {
         "vscode": "^1.16.0"
     },
@@ -19,7 +19,6 @@
     ],
     "keywords": [
         "html",
-        "br",
         "<br>",
         "linebreak",
         "shortcut",
