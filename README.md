@@ -2,13 +2,13 @@
 
 This is the README for your extension "insert-br-tag". 
 
-Very easy to insert <br> HTML tag keybind, with Dreamweaver's keybinding style.
+Very easy to insert `<br>` HTML tag keybind, with Dreamweaver's keybinding style.
 
 > `shift+enter`
 
 ## Features
 
-Insert <br> tag keybind.
+Insert `<br>` tag keybind.
 
 ## Requirements
 
