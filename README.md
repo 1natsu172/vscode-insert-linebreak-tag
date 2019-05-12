@@ -14,20 +14,58 @@ Very easy to insert `<br>` HTML tag keybind, with Dreamweaver's keybinding style
 
 ## Features
 
-Quick insert `<br>` tag with keybind.  
-Also support multi cursor.
+Quick insert `<br>` tag with keybind.
 
-##### repeated hit keys, like this.
+### Support multi cursor
 
-```
-<br><br><br><br><br><br><br><br><br><br><br>
-```
+Single or Multiple selections ok.
+
+### Support JSX language
+
+Tags are inserted in the form of `<br />` in jsx language file.
+
 
 ## Usage
 
-### Please `shift+enter` !!
+### Push `shift+enter` keys.
 
-Then insert `<br>` tag!!
+Then insert `<br>` tag. Easy.
+
+## Options
+
+Can set options in your `settings.json`.
+
+### "insert-br-tag.enableOnLanguage"
+
+Setting of language in which br-tag is inserted.
+
+Example(This notation is the default setting):
+
+```json
+"insert-br-tag.enableOnLanguage": [
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact",
+  "markdown",
+  "html"
+]
+```
+
+### "insert-br-tag.trailingSlashLanguage"
+
+Setting of language to use trailing slash format(`<br />`).
+
+Example(This notation is the default setting):
+
+```json
+"insert-br-tag.trailingSlashLanguage": [
+  "javascript",
+  "javascriptreact",
+  "typescript",
+  "typescriptreact"
+]
+```
 
 ## Requirements
 
@@ -35,7 +73,11 @@ Then insert `<br>` tag!!
 "vscode": "^1.16.0"
 ```
 
-***
+---
+
+## CHANGELOG
+
+See https://github.com/1natsu172/vscode-insert-linebreak-tag/blob/master/CHANGELOG.md
 
 ## Author
 

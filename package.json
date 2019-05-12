@@ -57,7 +57,7 @@
             "markdown",
             "html"
           ],
-          "description": "Set the languages that the extension will be enabled. e.g. [\"html\",\"xml\",\"php\"].",
+          "description": "Set the languages that the extension will be enabled. e.g. [\"html\",\"xml\",\"php\"]. If you want to enable all-language, set [\"*\"].",
           "scope": "resource"
         },
         "insert-br-tag.trailingSlashLanguage": {
@@ -68,7 +68,7 @@
             "typescript",
             "typescriptreact"
           ],
-          "description": "Set the languages that the extension will be enabled. e.g. [\"html\",\"xml\",\"php\"].",
+          "description": "Set the languages to insert tag in trailing slash format. e.g. [\"html\",\"xml\",\"php\"].",
           "scope": "resource"
         }
       }
