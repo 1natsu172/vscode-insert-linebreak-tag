@@ -28,7 +28,10 @@ const lineBreakTag = () => {
 const isEnableOnLanguage = (
   enableLanguageList: TextDocument['languageId'][],
   languageId: TextDocument['languageId']
-) => enableLanguageList.includes(languageId)
+) => {
+  if (enableLanguageList.indexOf('*') !== -1) return true
+  return enableLanguageList.includes(languageId)
+}
 
 function insertEditorSelection(text: string) {
   const editor = vscode.window.activeTextEditor
