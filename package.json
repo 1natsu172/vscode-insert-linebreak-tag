@@ -1,60 +1,90 @@
 {
-    "name": "insert-br-tag",
-    "displayName": "Insert <br> Tag",
-    "description": "Insert <br> tag shortcut, like Dreamweaver style",
-    "version": "0.0.4",
-    "publisher": "1natsu",
-    "engines": {
+  "name": "insert-br-tag",
+  "displayName": "Insert <br> Tag",
+  "description": "Insert <br> tag shortcut, like Dreamweaver style",
+  "version": "0.0.4",
+  "publisher": "1natsu",
+  "engines": {
     "vscode": ">1.16.0"
-    },
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/1natsu172/vscode-insert-linebreak-tag.git"
-    },
-    "icon": "images/plugin-icon.png",
-    "categories": [
-        "Keymaps",
-        "Other"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/1natsu172/vscode-insert-linebreak-tag.git"
+  },
+  "icon": "images/plugin-icon.png",
+  "categories": [
+    "Keymaps",
+    "Other"
+  ],
+  "keywords": [
+    "html",
+    "<br>",
+    "linebreak",
+    "shortcut",
+    "keybindings"
+  ],
+  "activationEvents": [
+    "onCommand:insert-br-tag.insertToSelection"
+  ],
+  "main": "./out/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "insert-br-tag.insertToSelection",
+        "title": "Insert <br> Tag"
+      }
     ],
-    "keywords": [
-        "html",
-        "<br>",
-        "linebreak",
-        "shortcut",
-        "keybindings"
+    "keybindings": [
+      {
+        "command": "insert-br-tag.insertToSelection",
+        "key": "shift+enter",
+        "mac": "shift+enter",
+        "when": "editorTextFocus"
+      }
     ],
-    "activationEvents": [
-        "onCommand:insertHTMLTag.insertLineBreak"
-    ],
-    "main": "./out/extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "insertHTMLTag.insertLineBreak",
-                "title": "Insert <br> Tag"
-            }
-        ],
-        "keybindings": [
-            {
-                "command": "insertHTMLTag.insertLineBreak",
-                "key": "shift+enter",
-                "mac": "shift+enter",
-                "when": "editorTextFocus"
-            }
-        ]
-    },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "npm run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
+    "configuration": {
+      "type": "object",
+      "title": "Insert br Tag configuration",
+      "properties": {
+        "insert-br-tag.enableOnLanguage": {
+          "type": "array",
+          "default": [
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact",
+            "markdown",
+            "html"
+          ],
+          "description": "Set the languages that the extension will be enabled. e.g. [\"html\",\"xml\",\"php\"].",
+          "scope": "resource"
+        },
+        "insert-br-tag.trailingSlashLanguage": {
+          "type": "array",
+          "default": [
+            "javascript",
+            "javascriptreact",
+            "typescript",
+            "typescriptreact"
+          ],
+          "description": "Set the languages that the extension will be enabled. e.g. [\"html\",\"xml\",\"php\"].",
+          "scope": "resource"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
     "@types/mocha": "^2.2.42",
     "@types/node": "^12.0.0",
     "typescript": "^3.4.5",
     "vscode": "^1.1.34"
-    }
+  }
 }
